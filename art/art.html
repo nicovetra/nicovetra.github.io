@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Writing – Nico Vetra</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f1115;
+      --fg: #eceff4;
+      --muted: #8f9bb3;
+      --accent: #88c0d0;
+      --border: #2e3440;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      /* same background, but one level up because we're in /writing/ */
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('../assets/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--fg);
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+    .card {
+      max-width: 780px;
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 2.25rem 2.25rem 2.5rem;
+      background: rgba(5, 6, 10, 0.9);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0 0 0.35rem 0;
+    }
+    header p {
+      margin: 0 0 1.5rem 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    nav {
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+      color: var(--muted);
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    nav span {
+      opacity: 0.6;
+    }
+    h2 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin: 0 0 0.75rem 0;
+    }
+    p {
+      margin: 0 0 0.75rem 0;
+      line-height: 1.5;
+      color: #d8dee9;
+      font-size: 0.95rem;
+    }
+    .post-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0 0;
+    }
+    .post-list li {
+      margin: 0 0 0.4rem 0;
+      font-size: 0.95rem;
+    }
+    .post-list a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .post-list a:hover {
+      text-decoration: underline;
+    }
+    .post-meta {
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-left: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <nav>
+      <a href="../index.html">Home</a> ·
+      <a href="../writing/writing.html">Writing</a> ·
+      <span>Art</span>
+    </nav>
+
+    <header>
+      <h1>Art</h1>
+      <p>
+        Sketches and music published under this name. 
+      </p>
+    </header>
+
+    <section>
+      <h2>Find some of my art below</h2>
+      <ul class="post-list">
+
+        <li>
+          <a href="sketches/Sketch.html">Sketch title</a>
+          <span class="post-meta">Sketch · 2025</span>
+        </li>
+        <!-- Add more essays here as you write them -->
+
+        <li>
+            <a href="music/music.html">Music Piece title</a>
+            <span class="post-meta">music · 2025</span>
+          </li>
+          <!-- Add more essays here as you write them -->
+
+      </ul>
+    </section>
+
+    </section>
+  </main>
+</body>
+</html>
